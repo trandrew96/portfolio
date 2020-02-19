@@ -1,0 +1,19 @@
+body, html {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  /* background-color: #121212 !important; */
+  color: white;
+}
+
+.home img {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.navbar {
+  background-color: #121212 !important;
+}
+
+
+.card {
+  background-color: #424242 !important;
+} 
