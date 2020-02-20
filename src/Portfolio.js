@@ -12,12 +12,12 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-4 offset-lg-4">
+        <div className="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
           <div className="card">
             <div className="row mb-3">
-              <div className="col-lg-12 text-center">
+              <div className="col-lg-12">
                 <h2>Weather App</h2>
-                <img src={weatherAppIcon} alt="weather app icon" style={{width: 200+'px'}}/>
+                <img src={weatherAppIcon} alt="weather app icon"/>
               </div>
             </div>
             <div className="row">
@@ -25,7 +25,7 @@ export default function Portfolio() {
                 <p>
                   This app was made using React and the DarkSkyAPI. 
                   You can view the current weather and a weekly forecast 
-                  for a select number of cities.             
+                  for a select number of cities. Link coming soon!          
                 </p>
               </div>
             </div>

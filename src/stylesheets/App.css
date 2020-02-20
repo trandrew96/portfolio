@@ -9,10 +9,9 @@ body, html {
   padding-right: 8px;
 }
 
-.navbar {
+.custom-navbar-dark {
   background-color: #121212 !important;
 }
-
 
 .card {
   background-color: #424242 !important;
