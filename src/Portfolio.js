@@ -1,6 +1,9 @@
 import React from "react";
 import weatherAppIcon from './assets/img/weather-app-icon.PNG';
 import './stylesheets/portfolio.css'
+import weatherDemoGif from './assets/img/weather-demo.gif';
+
+const weatherAppUrl = "https://fir-ab899.firebaseapp.com/";
 
 export default function Portfolio() {
   return(
@@ -17,7 +20,7 @@ export default function Portfolio() {
             <div className="row mb-3">
               <div className="col-lg-12">
                 <h2>Weather App</h2>
-                <img src={weatherAppIcon} alt="weather app icon"/>
+                <a href={weatherAppUrl}><img src={weatherDemoGif} alt="weather app icon"/></a>
               </div>
             </div>
             <div className="row">
@@ -25,7 +28,10 @@ export default function Portfolio() {
                 <p>
                   This app was made using React and the DarkSkyAPI. 
                   You can view the current weather and a weekly forecast 
-                  for a select number of cities. Link coming soon!          
+                  for a select number of cities.  
+                </p>
+                <p className="mt-3">
+                  <a href={weatherAppUrl}>View the app here!</a>     
                 </p>
               </div>
             </div>
