@@ -1,5 +1,4 @@
 import React from "react";
-import weatherAppIcon from './assets/img/weather-app-icon.PNG';
 import './stylesheets/portfolio.css'
 import weatherDemoGif from './assets/img/weather-demo.gif';
 
