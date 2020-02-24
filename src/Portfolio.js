@@ -2,7 +2,7 @@ import React from "react";
 import './stylesheets/portfolio.css'
 import weatherDemoGif from './assets/img/weather-demo.gif';
 
-const weatherAppUrl = "https://fir-ab899.firebaseapp.com/";
+const weatherAppUrl = "https://weather.trandrew.ca/";
 
 export default function Portfolio() {
   return(
