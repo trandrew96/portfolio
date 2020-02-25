@@ -3,17 +3,16 @@ import './stylesheets/portfolio.css'
 
 export default function About() {
   return(
-    <div className="container p-5">
+    <div className="container pt-1 pt-md-5">
       <div className="row text-center">
         <div className="col-12">
-          <h1>About Me</h1>
-          <br/>
+          <h1 className="mb-3">About Me</h1>
         </div>
       </div>
       <div className="row">
         <div className="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-          <div className="card text-center">
-            <p>
+          <div className="card">
+            <p className="text-center">
                 I love well designed apps. I am studying Software Engineering at UVic.
                 Previously I worked at ACDSystems as a Junior Web Developer, where I 
                 mostly used Symfony, Twig, and Bootstrap. I have learned the basics of

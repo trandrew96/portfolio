@@ -6,11 +6,10 @@ const weatherAppUrl = "https://weather.trandrew.ca/";
 
 export default function Portfolio() {
   return(
-    <div className="container p-5">
+    <div className="container pt-1 pt-md-5">
       <div className="row text-center">
         <div className="col-12">
-          <h1>My Projects</h1>
-          <br/>
+          <h1 className="mb-3">My Projects</h1>
         </div>
       </div>
       <div className="row">
@@ -27,10 +26,8 @@ export default function Portfolio() {
                 <p>
                   This app was made using React and the DarkSkyAPI. 
                   You can view the current weather and a weekly forecast 
-                  for a select number of cities.  
-                </p>
-                <p className="mt-3">
-                  <a href={weatherAppUrl}>View the app here!</a>     
+                  for a select number of cities. &nbsp;
+                  <a href="https://weather.trandrew.ca">Try it!</a>
                 </p>
               </div>
             </div>

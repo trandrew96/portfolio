@@ -5,6 +5,13 @@
   opacity: 0.4;
   filter: alpha(opacity=40); /* msie */
 }
+a {
+  color: #5d96f5;
+}
+a:hover {
+  text-decoration: none;
+  color: #4370ba;
+}
 
 /* .glow {
   animation: glow 2s ease-in-out infinite alternate;
