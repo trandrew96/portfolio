@@ -1,3 +1,11 @@
+.social-icon {
+  width: 48px;
+}
+.social-icon:hover {
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* msie */
+}
+
 /* .glow {
   animation: glow 2s ease-in-out infinite alternate;
   text-align: center;
