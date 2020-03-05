@@ -25,20 +25,9 @@ function Star(x, y, dx, radius){
     }
 }
 
-function Logo(text, y_offset, size) {
-    this.x = innerWidth/2;
-    this.y = innerHeight/2 + y_offset;
-
-    this.draw = function() {
-        c.font = size + "px Molengo";
-        c.textAlign = "center";
-        c.fillText(text, this.x, this.y);
-    }
-}
-
 // Initialize the stars
 let starArray = [];
-let velocityRange = 0.1;
+let velocityRange = 0.02;
 let sizeRange = 2.5;
 
 // Number of stars = height of canvas
@@ -60,3 +49,14 @@ function animate() {
     }
 }
 animate();
+
+// function Logo(text, y_offset, size) {
+//     this.x = innerWidth/2;
+//     this.y = innerHeight/2 + y_offset;
+
+//     this.draw = function() {
+//         c.font = size + "px Molengo";
+//         c.textAlign = "center";
+//         c.fillText(text, this.x, this.y);
+//     }
+// }
