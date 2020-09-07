@@ -16,5 +16,21 @@
 }
 
 .card img {
-  max-width:100%;
+  max-width: 100%;
+}
+
+.card:hover .img-top {
+  display: none;
+}
+
+.card:hover .img-bot {
+  display: inline;
+}
+
+.img-bot {
+  display: none;
+}
+
+.img-top {
+  display: inline;
 }
