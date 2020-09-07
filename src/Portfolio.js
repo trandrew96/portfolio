@@ -1,6 +1,5 @@
 import React from "react";
 import "./stylesheets/portfolio.css";
-import weatherDemoGif from "./assets/img/weather-demo.gif";
 
 const weatherAppUrl = "https://weather.trandrew.ca/";
 const projectTrackerUrl = "https://tranquil-atoll-61328.herokuapp.com/";
@@ -118,7 +117,7 @@ export default function Portfolio() {
                   />
                   <img
                     className="img-top"
-                    src={process.env.PUBLIC_URL + "/img/wiseworld-demo.PNG"}
+                    src={process.env.PUBLIC_URL + "/img/wiseworld-demo.png"}
                     alt="wiseworld demo gif"
                   />
                 </a>
