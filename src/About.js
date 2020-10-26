@@ -11,7 +11,7 @@ export default function About() {
       </div>
       <div className="row">
         <div className="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-          <div className="card">
+          <div className="card bio-wrapper">
             <p>
               I love well designed apps. I am currently a web-dev co-op at
               Ergonomyx in Victoria, and I am working towards my Software

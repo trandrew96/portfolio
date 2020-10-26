@@ -1,5 +1,6 @@
-body, html {
-  font-family: 'Saira Semi Condensed', sans-serif;
+body,
+html {
+  font-family: "Saira Semi Condensed", sans-serif;
   /* background-color: #121212 !important; */
   color: white;
 }
@@ -15,4 +16,18 @@ body, html {
 
 .card {
   background-color: #424242 !important;
-} 
+}
+
+/* Animate the project cards on load */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bio-wrapper {
+  animation: 1s ease-out 0s 1 fadeIn;
+}
