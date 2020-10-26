@@ -1,6 +1,8 @@
 let canvas = document.getElementById("star-canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+// canvas.width = "2000px";
+// canvas.height = "4000px";
 let c = canvas.getContext("2d");
 
 // Star Object
@@ -27,7 +29,7 @@ function Star(x, y, dx, radius) {
 
 // Initialize the stars
 let starArray = [];
-let velocityRange = 0.02;
+let velocityRange = 0.06;
 let sizeRange = 2.5;
 
 // Number of stars = height of canvas

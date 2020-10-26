@@ -15,7 +15,7 @@ export default function Portfolio() {
       </div>
       <div className="row">
         <div className="col-md-4">
-          <div className="card">
+          <div className="card card--project">
             <div className="row mb-3 text-center">
               <div className="col-lg-12">
                 <h2>Project Tracker App</h2>
@@ -73,7 +73,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card">
+          <div className="card card--project">
             <div className="row mb-3">
               <div className="col-lg-12 text-center">
                 <h2>Weather App</h2>
@@ -105,7 +105,7 @@ export default function Portfolio() {
         </div>
         <div className="col-md-4">
           {" "}
-          <div className="card">
+          <div className="card card--project">
             <div className="row mb-3">
               <div className="col-lg-12 text-center">
                 <h3>Wise World Entertainment</h3>
