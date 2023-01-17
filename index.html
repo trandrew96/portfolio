@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Tran - Full Stack Developer</title>
+  <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
+
+  <script src="./scripts/mobile-nav.js"></script>
+
+  <link rel="stylesheet" href="./styles/landing.css">
+  <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="./styles/work.css">
+  <link rel="stylesheet" href="./styles/projects.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/layout.css">
+  <link rel="stylesheet" href="./styles/module.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
+</head>
+
+<body>
+  <!-- MOBILE NAV -->
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Mobile Nav -->
+  <div class="topnav">
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="#work" onclick="collapseNav()">Work Experience / Resume</a>
+      <a href="#portfolio" onclick="collapseNav()">Personal Projects</a>
+      <a href="https://www.linkedin.com/in/trandrewxyz/" onclick="collapseNav()">LinkedIn</a>
+      <a href="https://github.com/trandrew96" onclick="collapseNav()">Github</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="expandNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <section class="landing">
+    <h1 class="landing-first-name text-center">Andrew</h1>
+    <h1 class="landing-last-name text-center">Tran</h1>
+    <h2 class="landing-subtitle text-center">Full Stack Developer</h2>
+    <div class="text-center socials-landing">
+      <a href="https://www.linkedin.com/in/trandrewxyz/"><img src="./nav/linkedin_icon.png" alt=""></a>
+      <a href="https://github.com/trandrew96" class="nav-github"><img src="./nav/github_icon.png" alt=""></a>
+    </div>
+
+
+    <div class="container-landing">
+      <div class="col-landing">
+        <div class="landing-portrait-container">
+          <img src="./public/img/portrait.jpg">
+        </div>
+      </div>
+      <div class="col-landing">
+        <p class="landing-paragraph">
+          Creative, organized, and adept problem-solver. Keen on elegant UI design and optimal user experiences. I am
+          confident in my ability to learn anything front-end or back-end, and I will do whatever it takes to get the
+          job done.
+        </p>
+        <p class="landing-paragraph">
+          I have over 1 year of work experience as a web developer and a Bachelor of Software Engineering from the
+          University of
+          Victoria. I have experience designing and implementing features using JS, CSS, ReactJS, and
+          various templating engines.
+          I have also done work involving NodeJS, flask, SQL and NoSQL.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work">
+    <h1 class="text-center work-header" id="work">Work Experience</h1>
+    <div class="info-grid">
+      <div class="info-grid-col">
+        <h3>Full Stack Developer @ Ergonomyx in 2021</h3>
+        <ul>
+          <li>Design and develop interactive UI with CSS/JS</li>
+          <ul>
+            <li>dashboards</li>
+            <li>shopping cart</li>
+            <li>currency switcher</li>
+          </ul>
+          <li>Wrote back-end logic in NodeJS, Flask, SQL</li>
+          <li>Improve responsiveness, esp mobile/tablet</li>
+          <li>Automate creation of invoice PDFs upon purchase</li>
+        </ul>
+        <div class="pt-5">
+          <b>Testimonial from Ergonomyx Supervisor:</b>
+          <p><i>"He has been very successful in the responsibilities
+              he has been assigned to including, e-commerce front-end upgrade, API/database
+              restructure, cloud server management, and website analytics.
+              <br /><br />
+              I highly recommend Andrew for employment in the software development field in its
+              entire range of application, from front-end to back end development.
+              As a supervisor I have seen competencies that makes his projects stand out from the
+              rest. Such competencies include leadership and initiative, software development, and communication"
+            </i>
+          </p>
+          <div class="text-right">
+            <b>- Sergio Perez</b>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="info-grid-col">
+        <h3>JUNIOR WEB DEVELOPER @ ACDSEE IN 2018</h3>
+        <ul>
+          <li>Develop static web pages</li>
+          <li>Implement misc features</li>
+          <li>CSS, Twig, Symfony</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center pt-6">
+      <a href="./public/2023 Resume.pdf">
+        <button class="btn-resume">
+          View my full resume
+        </button>
+        <!-- <img src="./public/png-icon.png" class="pdf-icon" alt=""> -->
+      </a>
+    </div>
+
+  </section>
+
+  <section class="projects">
+    <div class="projects-container">
+      <h1 class="projects-header" id="portfolio">Personal Projects</h1>
+      <div class="project-grid">
+        <div class="project">
+          <div class="project-thumbnail">
+            <a href="https://notflix-e0f18.firebaseapp.com/">
+              <img src="./public/img/notflix.png" data-thumbnail="./public/img/notflix.png"
+                data-gif="./public/img/notflix.gif" class="thumbnail" alt="netflix ui clone thumbnail">
+            </a>
+          </div>
+          <div class="project-card-grid">
+            <div class="project-card-col">
+              <h1 class="project-name">Netflix UI</h1>
+              <h2 class="project-skills">JavaScript • CSS</h2>
+            </div>
+            <div class="project-card-col">
+              <a href="https://github.com/trandrew96/netflix-slider" class="project-card-github"><img
+                  src="./nav/github_icon.png" alt=""></a>
+            </div>
+          </div>
+
+          <p>
+            A barebones re-creation of the iconic Netflix UI. Includes the infinite scroll effect, and the
+            transformation
+            of the movie icons when hovering over them.
+          </p>
+        </div>
+        <div class="project">
+          <div class="project-thumbnail">
+            <a href="https://weather.trandrew.ca/">
+              <img src="./public/img/weather-demo.PNG" data-thumbnail="./public/img/weather-demo.PNG"
+                data-gif="./public/img/weather-demo.gif" class="thumbnail" alt="weather app thumbnail">
+            </a>
+          </div>
+          <div class="project-card-grid">
+            <div class="project-card-col">
+              <h1 class="project-name">Weather App</h1>
+              <h2 class="project-skills">React • CSS</h2>
+            </div>
+            <div class="project-card-col">
+            </div>
+          </div>
+          <p>
+            A primitive weather app that gives the weekly forecast for a few different cities. Built using React and the
+            DarkSky API. Disclaimer: the demo will stop working in early 2023 due to the API shutting down.
+          </p>
+        </div>
+        <div class="project">
+          <div class="project-thumbnail">
+            <a href="https://wiseworldentertainment.com/">
+              <img src="./public/img/wiseworld-demo.png" data-thumbnail="./public/img/wiseworld-demo.png"
+                data-gif="./public/img/wiseworld-demo.gif" class="thumbnail" alt="wise world entertainment thumbnail">
+            </a>
+          </div>
+          <div class="project-card-grid">
+            <div class="project-card-col">
+              <h1 class="project-name">Wise World Entertainment</h1>
+              <h2 class="project-skills">React • CSS</h2>
+            </div>
+            <div class="project-card-col">
+            </div>
+          </div>
+          <p>
+            Wiseguy is a musician and friend of mine from my local town. This is a personal website I designed and
+            developed for him to share his music, videos, and social media accounts.
+          </p>
+        </div>
+        <div class="project">
+          <div class="project-thumbnail">
+            <img src="./public/img/project-tracker-demo.PNG" data-thumbnail="./public/img/project-tracker-demo.PNG"
+              data-gif="./public/img/project-tracker-demo.gif" class="thumbnail" alt="project management app">
+          </div>
+          <div class="project-card-grid">
+            <div class="project-card-col">
+              <h1 class="project-name">Ticket Tracker App</h1>
+              <h2 class="project-skills">Mongo • Express • React • Node</h2>
+            </div>
+            <div class="project-card-col">
+              <a href="https://github.com/trandrew96/project-tracker" class="project-card-github">
+                <img src="./nav/github_icon.png" alt=""></a>
+            </div>
+          </div>
+          <p>
+            Manage projects by creating tickets, assigning them to users, tracking their status, and discussing tickets
+            all within the app. Inspired by the Bugzilla. <a href="https://youtu.be/p2aux0CgdZg?t=65">View the demo on
+              YouTube</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Script for changing thumbnails on project card hover -->
+  <script src="./scripts/portfolio-cards.js"></script>
+</body>
+
+</html>

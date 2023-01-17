@@ -1,0 +1,92 @@
+.projects-header {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.projects {
+  width: min(95%, 90rem);
+  min-height: 100vh;
+  margin: auto;
+  display: grid;
+  place-items: center;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1.5rem;
+  padding-block: 2rem;
+  width: 100%;
+}
+
+.project {
+  /* border: 1px solid green; */
+  background-color: white;
+  border-radius: 1em;
+  margin: 2px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.project-thumbnail {
+ width: 100%;
+ height: 10em;
+ background-color: green;
+}
+
+.project-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnail-gif {
+  display: none;
+}
+
+.project-name {
+  font-size: 1.25rem;
+}
+
+.project-skills {
+  font-size: .85rem;
+}
+
+.project-grid {
+  grid-template-columns: 1fr;
+}
+
+.project-card-grid {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.project-card-github {
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  float:right;
+}
+
+@media (min-width: 35em) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Laptop */
+@media (min-width: 55em) {
+  .projects-header {
+    font-size: 4em;
+  }
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop? */
+@media (min-width: 75em) {
+  .project-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
