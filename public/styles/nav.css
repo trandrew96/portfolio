@@ -80,7 +80,7 @@
 
 
 /* BREAKPOINTS FOR DISPLAYING NAVS */
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 830px) {
   .topnav {
     display: none;
   }

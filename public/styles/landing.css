@@ -2,14 +2,9 @@
   margin: auto;
 }
 
-.landing-first-name,
-.landing-last-name {
+.landing-first-name {
   font-size: 4rem;
   margin: 0;
-}
-
-.landing-last-name {
-  margin-top: -2rem;
 }
 
 .landing-subtitle {
@@ -23,11 +18,16 @@
 
 .container-landing {
   display: flex;
-  width: min(95%, 75rem);
+  width: min(95%, 70rem);
   margin: auto;
   gap: 1rem;
   flex-wrap: wrap;
   margin-top: 2rem;
+}
+
+.col-landing {
+  display: flex;
+  align-items: center;
 }
 
 .landing-portrait-container {
@@ -50,7 +50,7 @@
 }
 
 /* Mobile */
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 767px) {
   .landing-subtitle {
     margin-top: 0;
   }
@@ -63,23 +63,14 @@
  } 
 }
 
-/* Desktop */
-@media screen and (min-width: 50em) {
-  .landing {
-    min-height: 100vh;
-    padding-top: 3rem;
-  }
-  .container-landing {
-    gap: 3.5rem;
-  }
+/* Tablet */ 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .container-landing {
     flex-wrap: nowrap
   }
-  .landing-paragraph {
-    font-size: 1.5rem;
-    /* max-width: 75ch; */
+  .landing-first-name {
+    margin-top: 50px;
   }
-
   .landing-portrait-container img {
     object-fit: cover;
     width: 300px;
@@ -90,6 +81,46 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .landing-paragraph {
+    max-width: 60ch;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .landing {
+    min-height: 100vh;
+    padding-top: 3rem;
+  }
+  .landing-first-name {
+    font-size: 8rem;
+    margin-top: 50px;
+  }
+  .landing-paragraph {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    max-width: 60ch;
+  }
+  .landing-quote {
+    font-size: 1.25rem;
+  }
+  .container-landing {
+    gap: 3.5rem;
+  }
+  .container-landing {
+    flex-wrap: nowrap
+  }
+
+  .landing-portrait-container img {
+    width: 400px;
+    height: 500px;
+    border-radius: 0%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   .socials-landing {
     display: block;
   }

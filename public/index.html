@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Andrew Tran - Full Stack Developer</title>
-  <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
 
   <script src="./scripts/mobile-nav.js"></script>
 
@@ -32,8 +32,8 @@
     <div id="myLinks">
       <a href="#work" onclick="collapseNav()">Work Experience / Resume</a>
       <a href="#portfolio" onclick="collapseNav()">Personal Projects</a>
-      <a href="https://www.linkedin.com/in/trandrewxyz/" onclick="collapseNav()">LinkedIn</a>
-      <a href="https://github.com/trandrew96" onclick="collapseNav()">Github</a>
+      <a href="https://www.linkedin.com/in/trandrewxyz/" onclick="collapseNav()" target=”_blank”>LinkedIn</a>
+      <a href="https://github.com/trandrew96" onclick="collapseNav()" target=”_blank”>Github</a>
     </div>
     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
     <a href="javascript:void(0);" class="icon" onclick="expandNav()">
@@ -42,34 +42,39 @@
   </div>
 
   <section class="landing">
-    <h1 class="landing-first-name text-center">Andrew</h1>
-    <h1 class="landing-last-name text-center">Tran</h1>
+    <h1 class="landing-first-name text-center">Andrew Tran</h1>
     <h2 class="landing-subtitle text-center">Full Stack Developer</h2>
     <div class="text-center socials-landing">
-      <a href="https://www.linkedin.com/in/trandrewxyz/"><img src="./nav/linkedin_icon.png" alt=""></a>
-      <a href="https://github.com/trandrew96" class="nav-github"><img src="./nav/github_icon.png" alt=""></a>
+      <a href="https://www.linkedin.com/in/trandrewxyz/" target=”_blank”><img src="./nav/linkedin_icon.png"
+          alt="linkedin icon"></a>
+      <a href="https://github.com/trandrew96" class="nav-github" target=”_blank”><img src="./nav/github_icon.png"
+          alt="github icon"></a>
     </div>
-
-
     <div class="container-landing">
       <div class="col-landing">
         <div class="landing-portrait-container">
-          <img src="./img/portrait.jpg">
+          <img src="./img/portrait-resized.jpg">
         </div>
       </div>
       <div class="col-landing">
         <p class="landing-paragraph">
-          Creative, organized, and adept problem-solver. Keen on elegant UI design and optimal user experiences. I am
-          confident in my ability to learn anything front-end or back-end, and I will do whatever it takes to get the
-          job done.
-        </p>
-        <p class="landing-paragraph">
+          Creative, organized, and focused problem-solver. Keen on elegant UI design and optimal user experiences.
+          Confident I can learn anything front-end or back-end, and I always aim to go the extra mile.
+          <br /><br />
           I have over 1 year of work experience as a web developer and a Bachelor of Software Engineering from the
           University of
           Victoria. I have experience designing and implementing features using JS, CSS, ReactJS, and
           various templating engines.
           I have also done work involving NodeJS, flask, SQL and NoSQL.
+          <br><br>
+          <i class="landing-quote">
+            "I highly recommend Andrew for employment in the software development field in its entire range of
+            application, from front-end to back end development."
+            <br><br>
+            <span>- Sergio, Ergonomyx Supervisor</span>
+          </i>
         </p>
+
       </div>
     </div>
   </section>
@@ -119,7 +124,7 @@
       </div>
     </div>
     <div class="text-center pt-6">
-      <a href="./2023 public resume.pdf">
+      <a href="./2023 public resume.pdf" target=”_blank”>
         <button class="btn-resume">
           View my full resume
         </button>
@@ -135,7 +140,7 @@
       <div class="project-grid">
         <div class="project">
           <div class="project-thumbnail">
-            <a href="https://notflix-e0f18.firebaseapp.com/">
+            <a href="https://notflix-e0f18.firebaseapp.com/" target=”_blank”>
               <img src="./img/notflix.png" data-thumbnail="./img/notflix.png" data-gif="./img/notflix.gif"
                 class="thumbnail" alt="netflix ui clone thumbnail">
             </a>
@@ -146,7 +151,7 @@
               <h2 class="project-skills">JavaScript • CSS</h2>
             </div>
             <div class="project-card-col">
-              <a href="https://github.com/trandrew96/netflix-slider" class="project-card-github"><img
+              <a href="https://github.com/trandrew96/netflix-slider" class="project-card-github" target=”_blank”><img
                   src="./nav/github_icon.png" alt=""></a>
             </div>
           </div>
@@ -159,7 +164,7 @@
         </div>
         <div class="project">
           <div class="project-thumbnail">
-            <a href="https://weather.trandrew.ca/">
+            <a href="https://weather.trandrew.ca/" target=”_blank”>
               <img src="./img/weather-demo.PNG" data-thumbnail="./img/weather-demo.PNG"
                 data-gif="./img/weather-demo.gif" class="thumbnail" alt="weather app thumbnail">
             </a>
@@ -179,7 +184,7 @@
         </div>
         <div class="project">
           <div class="project-thumbnail">
-            <a href="https://wiseworldentertainment.com/">
+            <a href="https://wiseworldentertainment.com/" target=”_blank”>
               <img src="./img/wiseworld-demo.png" data-thumbnail="./img/wiseworld-demo.png"
                 data-gif="./img/wiseworld-demo.gif" class="thumbnail" alt="wise world entertainment thumbnail">
             </a>
@@ -199,8 +204,8 @@
         </div>
         <div class="project">
           <div class="project-thumbnail">
-            <img src="./img/project-tracker-demo.PNG" data-thumbnail="./public/img/project-tracker-demo.PNG"
-              data-gif="./public/img/project-tracker-demo.gif" class="thumbnail" alt="project management app">
+            <img src="./img/project-tracker-demo.PNG" data-thumbnail="./img/project-tracker-demo.PNG"
+              data-gif="./img/project-tracker-demo.gif" class="thumbnail" alt="project management app">
           </div>
           <div class="project-card-grid">
             <div class="project-card-col">
@@ -208,13 +213,14 @@
               <h2 class="project-skills">Mongo • Express • React • Node</h2>
             </div>
             <div class="project-card-col">
-              <a href="https://github.com/trandrew96/project-tracker" class="project-card-github">
+              <a href="https://github.com/trandrew96/project-tracker" class="project-card-github" target=”_blank”>
                 <img src="./nav/github_icon.png" alt=""></a>
             </div>
           </div>
           <p>
             Manage projects by creating tickets, assigning them to users, tracking their status, and discussing tickets
-            all within the app. Inspired by the Bugzilla. <a href="https://youtu.be/p2aux0CgdZg?t=65">View the demo on
+            all within the app. Inspired by the Bugzilla. <a href="https://youtu.be/p2aux0CgdZg?t=65"
+              target=”_blank”>View the demo on
               YouTube</a>.
           </p>
         </div>
