@@ -46,6 +46,14 @@
 
 .project-name {
   font-size: 1.25rem;
+  font-weight:bold;
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.project-name:visited{
+  color: black;
 }
 
 .project-skills {
