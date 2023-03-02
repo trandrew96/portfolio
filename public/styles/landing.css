@@ -89,7 +89,7 @@
 /* Desktop */
 @media screen and (min-width: 1024px) {
   .landing {
-    min-height: 100vh;
+    min-height: 90vh;
     padding-top: 3rem;
   }
   .landing-first-name {
