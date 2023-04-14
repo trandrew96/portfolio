@@ -50,6 +50,7 @@
   margin-top: 1rem;
   display: inline-block;
   text-decoration: none;
+  color: black;
 }
 
 .project-name:visited{
