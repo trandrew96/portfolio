@@ -89,12 +89,15 @@
 /* Desktop */
 @media screen and (min-width: 1024px) {
   .landing {
-    min-height: 90vh;
-    padding-top: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
   }
   .landing-first-name {
-    font-size: 8rem;
-    margin-top: 50px;
+    font-size: 6rem;
+    margin-top: 0;
+  }
+  .landing-subtitle {
+    margin: 0;
   }
   .landing-paragraph {
     margin-top: 10px;
