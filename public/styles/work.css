@@ -11,20 +11,15 @@
   padding-top: 2rem;
 }
 
-@media screen and (min-width: 30em) {
-  .info-grid {
-    flex-wrap: nowrap;
-  }
-}
-
-.info-grid {
-  display: flex;
+.info-section {
+  max-width: 700px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  margin: auto;
 }
 
-.info-grid-col p {
+.info-section-col p {
   max-width: 50ch;
 }
 
