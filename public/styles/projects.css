@@ -25,7 +25,14 @@
   margin: 2px;
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
+}
+.project.special {
+  grid-column: span 2;
+}
+@media screen and (max-width:35em) {
+  .project.special {
+    grid-column: span 1;
+  }
 }
 
 .project-thumbnail {
