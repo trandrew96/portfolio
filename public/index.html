@@ -1,465 +1,766 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Tran - Full Stack Developer</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andrew Tran - Full Stack Developer</title>
-  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <script src="./scripts/mobile-nav.js"></script>
 
-  <script src="./scripts/mobile-nav.js"></script>
+    <link rel="stylesheet" href="./styles/landing.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/work.css" />
+    <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/module.css" />
 
-  <link rel="stylesheet" href="./styles/landing.css">
-  <link rel="stylesheet" href="./styles/nav.css">
-  <link rel="stylesheet" href="./styles/work.css">
-  <link rel="stylesheet" href="./styles/projects.css">
-  <link rel="stylesheet" href="./styles/base.css">
-  <link rel="stylesheet" href="./styles/layout.css">
-  <link rel="stylesheet" href="./styles/module.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Heebo"
+    />
+  </head>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
-</head>
+  <body>
+    <!-- MOBILE NAV -->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<body>
-  <!-- MOBILE NAV -->
-  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Mobile Nav -->
-  <div class="topnav">
-    <!-- Navigation links (hidden by default) -->
-    <div id="myLinks">
-      <a href="#work" onclick="collapseNav()">Work Experience / Resume</a>
-      <a href="#portfolio" onclick="collapseNav()">Personal Projects</a>
-      <a href="https://www.linkedin.com/in/trandrewxyz/" onclick="collapseNav()" target=”_blank”>LinkedIn</a>
-      <a href="https://github.com/trandrew96" onclick="collapseNav()" target=”_blank”>Github</a>
-    </div>
-    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-    <a href="javascript:void(0);" class="icon" onclick="expandNav()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-
-  <section class="landing">
-    <h1 class="landing-first-name text-center">Andrew Tran</h1>
-    <h2 class="landing-subtitle text-center">Software Engineer</h2>
-    <div class="text-center socials-landing">
-      <a href="https://www.linkedin.com/in/trandrewxyz/" target=”_blank”><img src="./nav/linkedin_icon.png"
-          alt="linkedin icon"></a>
-      <a href="https://github.com/trandrew96" class="nav-github" target=”_blank”><img src="./nav/github_icon.png"
-          alt="github icon"></a>
-    </div>
-    <div class="container-landing">
-      <div class="col-landing">
-        <div class="landing-portrait-container">
-          <img src="./img/portrait-resized.jpg">
-        </div>
+    <!-- Mobile Nav -->
+    <div class="topnav">
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#work" onclick="collapseNav()">Work Experience / Resume</a>
+        <a href="#portfolio" onclick="collapseNav()">Personal Projects</a>
+        <a
+          href="https://www.linkedin.com/in/trandrewxyz/"
+          onclick="collapseNav()"
+          target="”_blank”"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/trandrew96"
+          onclick="collapseNav()"
+          target="”_blank”"
+          >Github</a
+        >
       </div>
-      <div class="col-landing">
-        <p class="landing-paragraph">
-          Creative, organized, and focused problem-solver. Keen on elegant UI design and optimal user experiences.
-          Confident I can learn anything front-end or back-end, and I always aim to go the extra mile.
-          <br /><br />
-          I have over 1 year of work experience as a web developer and a Bachelor of Software Engineering from the
-          University of
-          Victoria. I have experience designing and implementing features using JS, CSS, ReactJS, and
-          various templating engines.
-          I have also done work involving NodeJS, flask, SQL and NoSQL.
-          <br><br>
-          <i class="landing-quote">
-            "I highly recommend Andrew for employment in the software development field in its entire range of
-            application, from front-end to back end development."
-            <br><br>
-            <span>- Sergio, Ergonomyx Supervisor</span>
-          </i>
-        </p>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="projects">
-    <div class="projects-container">
-      <h1 class="projects-header" id="portfolio">Personal Projects</h1>
-      <div class="project-grid">
-        <div class="project special">
-          <div class="project-thumbnail">
-            <a href="https://cinetrack.trandrew.ca/" target=”_blank”>
-              <img src="./img/cinetrack.jpg" data-thumbnail="./img/cinetrack.jpg" data-gif="./img/cinetrack.jpg" class="thumbnail"
-                alt="connect 4">
-            </a>
-          </div>
-          <div class="project-card-grid">
-            <div class="project-card-col">
-              <a href="https://cinetrack.trandrew.ca/" class="project-name" target=”_blank”>
-                CineTrack 
-              </a>
-              <h2 class="project-skills">Firebase • React • TailwindCSS</h2>
-            </div>
-            <!-- <div class="project-card-col">
-              <a href="https://github.com/trandrew96/connect4-react" class="project-card-github" target=”_blank”>
-                <img src="./nav/github_icon.png" alt=""></a>
-            </div> -->
-          </div>
-          <p>
-            Discover, share, and bookmark millions of films. The homepage dynamically shows the most current popular, upcoming and now playing movies. You can also find out where each film can be streamed, rented, or bought (in Canada).
-            Create an account and save movies to your watchlist so you can keep track of your backlog. CineTrack utilizes the <a href="https://www.themoviedb.org/">Movie Database (TMDB) API</a>, which is a community built movie and TV database. 
-            This app is heavily inspired by Letterboxd and IMDB.
-          </p>
-        </div>
-        <div class="project">
-          <div class="project-thumbnail">
-            <a href="https://connect4.trandrew.ca/" target=”_blank”>
-              <img src="./img/connect4.PNG" data-thumbnail="./img/connect4.PNG" data-gif="./img/connect4.PNG" class="thumbnail"
-                alt="connect 4">
-            </a>
-          </div>
-          <div class="project-card-grid">
-            <div class="project-card-col">
-              <a href="https://connect4.trandrew.ca/" class="project-name" target=”_blank”>
-                Connect 4
-              </a>
-              <h2 class="project-skills">React • TailwindCSS</h2>
-            </div>
-            <div class="project-card-col">
-              <a href="https://github.com/trandrew96/connect4-react" class="project-card-github" target=”_blank”>
-                <img src="./nav/github_icon.png" alt=""></a>
-            </div>
-          </div>
-          <p>
-            Play the Connect 4 board game with your friends right in the browser! Currently supports 2 player matches on the same machine. The goal is to add online multiplayer in the near future.
-          </p>
-        </div>
-        <div class="project">
-          <div class="project-thumbnail">
-            <a href="https://todo.trandrew.ca/" target=”_blank”>
-              <img src="./img/todo.gif" data-thumbnail="./img/todo.gif" data-gif="./img/todo-demo.gif" class="thumbnail"
-                alt="todo app thumbnail">
-            </a>
-          </div>
-          <div class="project-card-grid">
-            <div class="project-card-col">
-              <a href="https://todo.trandrew.ca/" class="project-name" target=”_blank”>
-                Todo App
-              </a>
-              <h2 class="project-skills">React • TailwindCSS</h2>
-            </div>
-            <div class="project-card-col">
-              <a href="https://github.com/trandrew96/todo-app" class="project-card-github" target=”_blank”>
-                <img src="./nav/github_icon.png" alt=""></a>
-            </div>
-          </div>
-          <p>
-            Create, update, and delete your list of todos. Includes <b>drag and drop</b> functionality and a dark mode
-            option! It was a lot of fun learning how to implement these features, and I'm excited to explore drag and
-            drop functionality in future projects.
-          </p>
-        </div>
-
-        <div class="project">
-          <div class="project-thumbnail">
-            <a href="https://jobs.trandrew.ca/" target=”_blank”>
-              <img src="./img/jobs.gif" data-thumbnail="./img/jobs.gif" data-gif="./img/job-ui-demo.gif"
-                class="thumbnail" alt="job listings app thumbnail">
-            </a>
-          </div>
-          <div class="project-card-grid">
-            <div class="project-card-col">
-              <a href="https://jobs.trandrew.ca/" class="project-name" target=”_blank”>
-                Job Listings UI
-              </a>
-              <h2 class="project-skills">React • TailwindCSS</h2>
-            </div>
-            <div class="project-card-col">
-              <a href="https://github.com/trandrew96/todo-app" class="project-card-github" target=”_blank”>
-                <img src="./nav/github_icon.png" alt=""></a>
-            </div>
-          </div>
-          <p>
-            View a list developer jobs and filter them based on programming languages, different roles,
-            and different seniority levels. Making this project was good practice for my layout and state management
-            skills.
-          </p>
-        </div>
-
-        <div class="project">
-          <div class="project-thumbnail">
-            <a href="https://url-shortener.trandrew.ca/" target=”_blank”>
-              <img src="./img/url-shortener-thumbnail.gif" data-thumbnail="./img/url-shortener-thumbnail.gif"
-                data-gif="./img/url-shortener-demo.gif" class="thumbnail" alt="url shortener thumbnail">
-            </a>
-          </div>
-          <div class="project-card-grid">
-            <div class="project-card-col">
-              <a href="https://url-shortener.trandrew.ca/" class="project-name" target=”_blank”>
-                URL Shortener
-              </a>
-              <h2 class="project-skills">React • TailwindCSS • APIs</h2>
-            </div>
-            <div class="project-card-col">
-              <a href="https://github.com/trandrew96/url-shortener" class="project-card-github" target=”_blank”>
-                <img src="./nav/github_icon.png" alt=""></a>
-            </div>
-          </div>
-          <p>
-            Shorten your URLs with this sleek web app I built with React and the <a href="https://shrtco.de/"
-              target="_blank">shrtcode</a> API. This project was good practice for creating a UI that adapts
-            to user input and API responses. The design and idea was provided by frontend mentor.
-          </p>
-        </div>
-
-        <div class="project">
-          <div class="project-thumbnail">
-            <a href="https://ecommerce-page-d5cfb.web.app/" target=”_blank”>
-              <img src="./img/ecommerce-first-frame.gif" data-thumbnail="./img/ecommerce-first-frame.gif"
-                data-gif="./img/ecommerce-page-demo-cropped.gif" class="thumbnail" alt="ecommerce page thumbnail">
-            </a>
-          </div>
-          <div class="project-card-grid">
-            <div class="project-card-col">
-              <a href="https://ecommerce-page-d5cfb.web.app/" class="project-name" target=”_blank”>
-                Ecommerce Page
-              </a>
-              <h2 class="project-skills">React • TailwindCSS</h2>
-            </div>
-            <div class="project-card-col">
-              <a href="https://github.com/trandrew96/ecommerce-product-page-ui" class="project-card-github"
-                target=”_blank”>
-                <img src="./nav/github_icon.png" alt=""></a>
-            </div>
-          </div>
-          <p>
-            An interactive product page with a lightbox modal and add-to-cart functionality. This was done for a
-            challenge
-            by frontend mentor. Check out the <a href="https://ecommerce-page-d5cfb.web.app/">demo</a> for yourself!
-          </p>
-        </div>
-
-        <div class="project">
-          <div class="project-thumbnail">
-            <a href="https://wiseworldentertainment.com/" target=”_blank”> <img src="./img/wiseworld-demo.png"
-                data-thumbnail="./img/wiseworld-demo.png" data-gif="./img/wiseworld-demo.gif" class="thumbnail"
-                alt="wise world entertainment thumbnail"></a>
-          </div>
-          <div class="project-card-grid">
-            <div class="project-card-col">
-              <a class="project-name" href="https://wiseworldentertainment.com/" target=”_blank”>
-                Wise World Entertainment
-              </a>
-              <h2 class="project-skills">React • CSS</h2>
-            </div>
-            <div class="project-card-col">
-            </div>
-          </div>
-          <p>
-            Wiseguy is a musician and friend of mine from my local town. This is a personal website I designed and
-            developed for him to share his music, videos, and social media accounts.
-          </p>
-        </div>
-        <div class="project">
-          <div class="project-thumbnail">
-            <a href="https://time-tracking-dashboard-683c2.web.app/" target=”_blank”>
-              <img src="./img/time-tracking-dashboard-large.JPG"
-                data-thumbnail="./img/time-tracking-dashboard-large.JPG"
-                data-gif="./img/time tracker dashboard demo.gif" class="thumbnail" alt="time tracking dashboard">
-            </a>
-          </div>
-          <div class="project-card-grid">
-            <div class="project-card-col">
-              <a href="https://time-tracking-dashboard-683c2.web.app/" class="project-name" target=”_blank”>
-                Time Tracking Dashboard
-              </a>
-              <h2 class="project-skills">React • TailwindCSS</h2>
-            </div>
-            <div class="project-card-col">
-              <a href="https://github.com/trandrew96/Time-tracking-dashboard" class="project-card-github"
-                target=”_blank”>
-                <img src="./nav/github_icon.png" alt=""></a>
-            </div>
-          </div>
-          <p>
-            An interactive and responsive time tracking dashboard built using React and TailwindCSS. This was designed
-            by frontend mentor.
-          </p>
-        </div>
-        <div class="project">
-          <div class="project-thumbnail">
-            <a href="https://frontend-mentor-noti-page.web.app/" target=”_blank”>
-              <img src="./img/notifications-page.PNG" data-thumbnail="./img/notifications-page.PNG"
-                data-gif="./img/notifications-page.PNG" class="thumbnail" alt="notifications page">
-            </a>
-          </div>
-          <div class="project-card-grid">
-            <div class="project-card-col">
-              <a href="https://frontend-mentor-noti-page.web.app/" class="project-name" target=”_blank”>
-                Notifications Page
-              </a>
-              <h2 class="project-skills">React • TailwindCSS</h2>
-            </div>
-            <div class="project-card-col">
-              <a href="https://github.com/trandrew96/Notifications-page-for-Frontend-Mentor" class="project-card-github"
-                target=”_blank”>
-                <img src="./nav/github_icon.png" alt=""></a>
-            </div>
-          </div>
-          <p>
-            An elegant notifications page built using React and TailwindCSS. This was designed by frontend mentor.
-          </p>
-        </div>
-        <div class="project">
-          <div class="project-thumbnail">
-            <img src="./img/weather-demo.PNG" data-thumbnail="./img/weather-demo.PNG" data-gif="./img/weather-demo.gif"
-              class="thumbnail" alt="weather app thumbnail">
-          </div>
-          <div class="project-card-grid">
-            <div class="project-card-col">
-              <a class="project-name">
-                Weather App
-              </a>
-              <h2 class="project-skills">React • CSS</h2>
-            </div>
-            <div class="project-card-col">
-            </div>
-          </div>
-          <p>
-            A primitive weather app that gives the weekly forecast for a few different cities. Built using React and the
-            DarkSky API. Disclaimer: the demo will stop working in early 2023 due to the API shutting down.
-          </p>
-        </div>
-        <div class="project">
-          <div class="project-thumbnail">
-            <a href="https://notflix-e0f18.firebaseapp.com/" target=”_blank”>
-              <img src="./img/notflix.png" data-thumbnail="./img/notflix.png" data-gif="./img/notflix.gif"
-                class="thumbnail" alt="netflix ui clone thumbnail">
-            </a>
-          </div>
-          <div class="project-card-grid">
-            <div class="project-card-col">
-              <a class="project-name" href="https://notflix-e0f18.firebaseapp.com/" target=”_blank”>
-                Rough Netflix UI
-              </a>
-              <h2 class="project-skills">JavaScript • CSS</h2>
-            </div>
-            <div class="project-card-col">
-              <a href="https://github.com/trandrew96/netflix-slider" class="project-card-github" target=”_blank”><img
-                  src="./nav/github_icon.png" alt=""></a>
-            </div>
-          </div>
-
-          <p>
-            A barebones re-creation of the iconic Netflix UI. Includes the infinite scroll effect, and the
-            transformation
-            of the movie icons when hovering over them.
-          </p>
-        </div>
-        <div class="project">
-          <div class="project-thumbnail">
-            <img src="./img/project-tracker-demo.PNG" data-thumbnail="./img/project-tracker-demo.PNG"
-              data-gif="./img/project-tracker-demo.gif" class="thumbnail" alt="project management app">
-          </div>
-          <div class="project-card-grid">
-            <div class="project-card-col">
-              <span class="project-name">Project Management App</span>
-              <h2 class="project-skills">Mongo • Express • React • Node</h2>
-            </div>
-            <div class="project-card-col">
-              <a href="https://github.com/trandrew96/project-tracker" class="project-card-github" target=”_blank”>
-                <img src="./nav/github_icon.png" alt=""></a>
-            </div>
-          </div>
-          <p>
-            Manage projects by creating tickets, assigning them to users, tracking their status, and discussing tickets
-            all within the app. Inspired by the Bugzilla. <a href="https://youtu.be/p2aux0CgdZg?t=65"
-              target=”_blank”>View the demo on
-              YouTube</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="work">
-    <h1 class="text-center work-header" id="work">Work Experience</h1>
-    <section class="info-section">
-      <div class="">
-        <h3>Web Developer Contractor @ Ingram Pharmacy in 2024</h3>
-        <ul>
-          <li>Design and develop static brochure website for this family owned local business
-            <br/>
-            <a href="https://ingrampharmacy.ca/" target="_blank">ingrampharmacy.ca</a></li>
-          <li>Consult client on required content and copywrite said content</li>
-          <li>Manage deployment</li>
-          <li>Optimize SEO</li>
-          <li>Make changes to site content whenever the client requests it in the future</li>
-        </ul>
-      </div>
-      <div class="">
-        <h3>Web Developer Consultant @ Lake Cowichan in 2023</h3>
-        <ul>
-          <li>Design and develop interactive UI with CSS/JS</li>
-          <ul>
-            <li>Search bar</li>
-            <li>Navbar</li>
-          </ul>
-          <li>Organize and create static web pages</li>
-          <li>Improve existing UI, bug fixes</li>
-          <li>Troubleshoot issues with WordPress site</li>
-        </ul>
-      </div>
-      <div class="">
-        <h3>Full Stack Developer @ Ergonomyx in 2021</h3>
-        <ul>
-          <li>Design and develop interactive UI with CSS/JS</li>
-          <ul>
-            <li>dashboards</li>
-            <li>shopping cart</li>
-            <li>currency switcher</li>
-          </ul>
-          <li>Wrote back-end logic in NodeJS, Flask, SQL</li>
-          <li>Improve responsiveness, esp mobile/tablet</li>
-          <li>Automate creation of invoice PDFs upon purchase</li>
-        </ul>
-        <div class="pt-5">
-          <b>Testimonial from Ergonomyx Supervisor:</b>
-          <p><i>"He has been very successful in the responsibilities
-              he has been assigned to including, e-commerce front-end upgrade, API/database
-              restructure, cloud server management, and website analytics.
-              <br /><br />
-              I highly recommend Andrew for employment in the software development field in its
-              entire range of application, from front-end to back end development.
-              As a supervisor I have seen competencies that makes his projects stand out from the
-              rest. Such competencies include leadership and initiative, software development, and communication"
-            </i>
-          </p>
-          <div class="text-right">
-            <b>- Sergio Perez</b>
-          </div>
-        </div>
-      </div>
-      <div class="">
-        <h3>JUNIOR WEB DEVELOPER @ ACDSEE IN 2018</h3>
-        <ul>
-          <li>Develop static web pages</li>
-          <li>Implement misc features</li>
-          <li>CSS, Twig, Symfony</li>
-        </ul>
-      </div>
-    </section>
-    <div class="text-center pt-6">
-      <a href="./Andrew Tran - Software Developer Resume.pdf" target=”_blank”>
-        <button class="btn-resume">
-          View my full resume
-        </button>
-        <!-- <img src="./png-icon.png" class="pdf-icon" alt=""> -->
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="expandNav()">
+        <i class="fa fa-bars"></i>
       </a>
     </div>
 
-  </section>
+    <section class="landing">
+      <h1 class="landing-first-name text-center">Andrew Tran</h1>
+      <h2 class="landing-subtitle text-center">Software Engineer</h2>
+      <div class="text-center socials-landing">
+        <a href="https://www.linkedin.com/in/trandrewxyz/" target="”_blank”"
+          ><img src="./nav/linkedin_icon.png" alt="linkedin icon"
+        /></a>
+        <a
+          href="https://github.com/trandrew96"
+          class="nav-github"
+          target="”_blank”"
+          ><img src="./nav/github_icon.png" alt="github icon"
+        /></a>
+      </div>
+      <div class="container-landing">
+        <div class="col-landing">
+          <div class="landing-portrait-container">
+            <img src="./img/portrait-resized.jpg" />
+          </div>
+        </div>
+        <div class="col-landing">
+          <p class="landing-paragraph">
+            Creative, organized, and focused problem-solver. Keen on sleek UI
+            design and optimal user experiences. Confident I can learn anything
+            front-end or back-end, and I always aim to go the extra mile.
+            <br /><br />
+            I have over 3 years of work experience as a web developer and a
+            Bachelor of Software Engineering from the University of Victoria. I
+            have experience designing and implementing features using JS, CSS,
+            ReactJS, and various templating engines. I have also done work
+            involving NodeJS, flask, SQL and NoSQL.
+            <br /><br />
+            <i class="landing-quote"></i>
+              "I highly recommend Andrew for employment in the software
+              development field in its entire range of application, from
+              front-end to back end development." <br /><br />
+              <span>- Sergio, Ergonomyx Supervisor</span>
+            </i>
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Script for changing thumbnails on project card hover -->
-  <script src="./scripts/portfolio-cards.js"></script>
-</body>
+    <section class="projects">
+      <div class="projects-container">
+        <h1 class="projects-header" id="portfolio">Professional Projects</h1>
+        <div class="project-grid professional">
+          <div class="project">
+            <div class="project-thumbnail">
+              <a href="https://ingrampharmacy.ca/" target="”_blank”">
+                <img
+                  src="./img/professional/ingram-resize.jpg"
+                  data-thumbnail="./img/professional/ingram-resize.jpg"
+                  data-gif="./img/professional/ingram-resize.jpg"
+                  class="thumbnail"
+                  alt="connect 4"
+                />
+              </a>
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <a
+                  href="https://ingrampharmacy.ca/"
+                  class="project-name"
+                  target="”_blank”"
+                >
+                  Ingram Pharmacy
+                </a>
+                <h2 class="project-skills">Shopify • Liquid • CSS</h2>
+              </div>
+              <div class="project-card-col"></div>
+            </div>
+            <p>
+              Online webstore for a pharmacy built with Shopify and that I made
+              by myself. I configured and customized the theme using Liquid,
+              HTML, CSS.
+            </p>
+          </div>
+          <div class="project">
+            <div class="project-thumbnail">
+              <a href="https://www.town.lakecowichan.bc.ca/" target="”_blank”">
+                <img
+                  src="./img/professional/lake-cowichan.jpg"
+                  data-thumbnail="./img/professional/lake-cowichan.jpg"
+                  data-gif="./img/professional/lake-cowichan.jpg"
+                  class="thumbnail"
+                  alt="connect 4"
+                />
+              </a>
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <a
+                  href="https://www.town.lakecowichan.bc.ca/"
+                  class="project-name"
+                  target="”_blank”"
+                >
+                  Town of Lake Cowichan
+                </a>
+                <h2 class="project-skills">HTML • CSS • JS</h2>
+              </div>
+              <div class="project-card-col"></div>
+            </div>
+            <p>
+              The official website for the Town of Lake Cowichan. I was hired as
+              a web developer consultant to improve the UI and UX of the site,
+              fix bugs, and add new features such as a search bar and a mobile
+              responsive navbar.
+            </p>
+          </div>
+          <div class="project">
+            <div class="project-thumbnail">
+              <a href="https://www.ergonomyx.com/" target="”_blank”">
+                <img
+                  src="./img/professional/ergonomyx.jpg"
+                  data-thumbnail="./img/professional/ergonomyx.jpg"
+                  data-gif="./img/professional/ergonomyx.jpg"
+                  class="thumbnail"
+                  alt="connect 4"
+                />
+              </a>
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <a
+                  href="https://www.ergonomyx.com/"
+                  class="project-name"
+                  target="”_blank”"
+                >
+                  Ergonomyx Co-op
+                </a>
+                <h2 class="project-skills">JS • CSS • Flask</h2>
+              </div>
+              <div class="project-card-col"></div>
+            </div>
+            <p>
+              Ecommerce website for Ergonomyx, a company that sells "Workspace
+              Fitness" solutions. I worked as a full stack developer co-op where
+              I designed and implemented features such as: custom dashboards for
+              customers and employees, currency switcher, shopping cart
+              improvements, and automating the creation of invoice PDFs upon
+              purchase.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="projects">
+      <div class="projects-container">
+        <h1 class="projects-header" id="portfolio">Personal Projects</h1>
+        <div class="project-grid">
+          <div class="project special">
+            <div class="project-thumbnail">
+              <a href="https://cinetrack.trandrew.ca/" target="”_blank”">
+                <img
+                  src="./img/cinetrack.jpg"
+                  data-thumbnail="./img/cinetrack.jpg"
+                  data-gif="./img/cinetrack.jpg"
+                  class="thumbnail"
+                  alt="connect 4"
+                />
+              </a>
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <a
+                  href="https://cinetrack.trandrew.ca/"
+                  class="project-name"
+                  target="”_blank”"
+                >
+                  CineTrack
+                </a>
+                <h2 class="project-skills">Firebase • React • TailwindCSS</h2>
+              </div>
+              <!-- <div class="project-card-col">
+              <a href="https://github.com/trandrew96/connect4-react" class="project-card-github" target=”_blank”>
+                <img src="./nav/github_icon.png" alt=""></a>
+            </div> -->
+            </div>
+            <p>
+              Discover, share, and bookmark millions of films. The homepage
+              dynamically shows the most current popular, upcoming and now
+              playing movies. You can also find out where each film can be
+              streamed, rented, or bought (in Canada). Create an account and
+              save movies to your watchlist so you can keep track of your
+              backlog. CineTrack utilizes the
+              <a href="https://www.themoviedb.org/">Movie Database (TMDB) API</a
+              >, which is a community built movie and TV database. This app is
+              heavily inspired by Letterboxd and IMDB.
+            </p>
+          </div>
+          <div class="project">
+            <div class="project-thumbnail">
+              <a href="https://connect4.trandrew.ca/" target="”_blank”">
+                <img
+                  src="./img/connect4.PNG"
+                  data-thumbnail="./img/connect4.PNG"
+                  data-gif="./img/connect4.PNG"
+                  class="thumbnail"
+                  alt="connect 4"
+                />
+              </a>
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <a
+                  href="https://connect4.trandrew.ca/"
+                  class="project-name"
+                  target="”_blank”"
+                >
+                  Connect 4
+                </a>
+                <h2 class="project-skills">React • TailwindCSS</h2>
+              </div>
+              <div class="project-card-col">
+                <a
+                  href="https://github.com/trandrew96/connect4-react"
+                  class="project-card-github"
+                  target="”_blank”"
+                >
+                  <img src="./nav/github_icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <p>
+              Play the Connect 4 board game with your friends right in the
+              browser! Currently supports 2 player matches on the same machine.
+              The goal is to add online multiplayer in the near future.
+            </p>
+          </div>
+          <div class="project">
+            <div class="project-thumbnail">
+              <a href="https://todo.trandrew.ca/" target="”_blank”">
+                <img
+                  src="./img/todo.gif"
+                  data-thumbnail="./img/todo.gif"
+                  data-gif="./img/todo-demo.gif"
+                  class="thumbnail"
+                  alt="todo app thumbnail"
+                />
+              </a>
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <a
+                  href="https://todo.trandrew.ca/"
+                  class="project-name"
+                  target="”_blank”"
+                >
+                  Todo App
+                </a>
+                <h2 class="project-skills">React • TailwindCSS</h2>
+              </div>
+              <div class="project-card-col">
+                <a
+                  href="https://github.com/trandrew96/todo-app"
+                  class="project-card-github"
+                  target="”_blank”"
+                >
+                  <img src="./nav/github_icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <p>
+              Create, update, and delete your list of todos. Includes
+              <b>drag and drop</b> functionality and a dark mode option! It was
+              a lot of fun learning how to implement these features, and I'm
+              excited to explore drag and drop functionality in future projects.
+            </p>
+          </div>
+
+          <div class="project">
+            <div class="project-thumbnail">
+              <a href="https://jobs.trandrew.ca/" target="”_blank”">
+                <img
+                  src="./img/jobs.gif"
+                  data-thumbnail="./img/jobs.gif"
+                  data-gif="./img/job-ui-demo.gif"
+                  class="thumbnail"
+                  alt="job listings app thumbnail"
+                />
+              </a>
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <a
+                  href="https://jobs.trandrew.ca/"
+                  class="project-name"
+                  target="”_blank”"
+                >
+                  Job Listings UI
+                </a>
+                <h2 class="project-skills">React • TailwindCSS</h2>
+              </div>
+              <div class="project-card-col">
+                <a
+                  href="https://github.com/trandrew96/todo-app"
+                  class="project-card-github"
+                  target="”_blank”"
+                >
+                  <img src="./nav/github_icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <p>
+              View a list developer jobs and filter them based on programming
+              languages, different roles, and different seniority levels. Making
+              this project was good practice for my layout and state management
+              skills.
+            </p>
+          </div>
+
+          <div class="project">
+            <div class="project-thumbnail">
+              <a href="https://url-shortener.trandrew.ca/" target="”_blank”">
+                <img
+                  src="./img/url-shortener-thumbnail.gif"
+                  data-thumbnail="./img/url-shortener-thumbnail.gif"
+                  data-gif="./img/url-shortener-demo.gif"
+                  class="thumbnail"
+                  alt="url shortener thumbnail"
+                />
+              </a>
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <a
+                  href="https://url-shortener.trandrew.ca/"
+                  class="project-name"
+                  target="”_blank”"
+                >
+                  URL Shortener
+                </a>
+                <h2 class="project-skills">React • TailwindCSS • APIs</h2>
+              </div>
+              <div class="project-card-col">
+                <a
+                  href="https://github.com/trandrew96/url-shortener"
+                  class="project-card-github"
+                  target="”_blank”"
+                >
+                  <img src="./nav/github_icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <p>
+              Shorten your URLs with this sleek web app I built with React and
+              the <a href="https://shrtco.de/" target="_blank">shrtcode</a> API.
+              This project was good practice for creating a UI that adapts to
+              user input and API responses. The design and idea was provided by
+              frontend mentor.
+            </p>
+          </div>
+
+          <div class="project">
+            <div class="project-thumbnail">
+              <a href="https://ecommerce-page-d5cfb.web.app/" target="”_blank”">
+                <img
+                  src="./img/ecommerce-first-frame.gif"
+                  data-thumbnail="./img/ecommerce-first-frame.gif"
+                  data-gif="./img/ecommerce-page-demo-cropped.gif"
+                  class="thumbnail"
+                  alt="ecommerce page thumbnail"
+                />
+              </a>
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <a
+                  href="https://ecommerce-page-d5cfb.web.app/"
+                  class="project-name"
+                  target="”_blank”"
+                >
+                  Ecommerce Page
+                </a>
+                <h2 class="project-skills">React • TailwindCSS</h2>
+              </div>
+              <div class="project-card-col">
+                <a
+                  href="https://github.com/trandrew96/ecommerce-product-page-ui"
+                  class="project-card-github"
+                  target="”_blank”"
+                >
+                  <img src="./nav/github_icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <p>
+              An interactive product page with a lightbox modal and add-to-cart
+              functionality. This was done for a challenge by frontend mentor.
+              Check out the
+              <a href="https://ecommerce-page-d5cfb.web.app/">demo</a> for
+              yourself!
+            </p>
+          </div>
+
+          <div class="project">
+            <div class="project-thumbnail">
+              <a href="https://wiseworldentertainment.com/" target="”_blank”">
+                <img
+                  src="./img/wiseworld-demo.png"
+                  data-thumbnail="./img/wiseworld-demo.png"
+                  data-gif="./img/wiseworld-demo.gif"
+                  class="thumbnail"
+                  alt="wise world entertainment thumbnail"
+              /></a>
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <a
+                  class="project-name"
+                  href="https://wiseworldentertainment.com/"
+                  target="”_blank”"
+                >
+                  Wise World Entertainment
+                </a>
+                <h2 class="project-skills">React • CSS</h2>
+              </div>
+              <div class="project-card-col"></div>
+            </div>
+            <p>
+              Wiseguy is a musician and friend of mine from my local town. This
+              is a personal website I designed and developed for him to share
+              his music, videos, and social media accounts.
+            </p>
+          </div>
+          <div class="project">
+            <div class="project-thumbnail">
+              <a
+                href="https://time-tracking-dashboard-683c2.web.app/"
+                target="”_blank”"
+              >
+                <img
+                  src="./img/time-tracking-dashboard-large.JPG"
+                  data-thumbnail="./img/time-tracking-dashboard-large.JPG"
+                  data-gif="./img/time tracker dashboard demo.gif"
+                  class="thumbnail"
+                  alt="time tracking dashboard"
+                />
+              </a>
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <a
+                  href="https://time-tracking-dashboard-683c2.web.app/"
+                  class="project-name"
+                  target="”_blank”"
+                >
+                  Time Tracking Dashboard
+                </a>
+                <h2 class="project-skills">React • TailwindCSS</h2>
+              </div>
+              <div class="project-card-col">
+                <a
+                  href="https://github.com/trandrew96/Time-tracking-dashboard"
+                  class="project-card-github"
+                  target="”_blank”"
+                >
+                  <img src="./nav/github_icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <p>
+              An interactive and responsive time tracking dashboard built using
+              React and TailwindCSS. This was designed by frontend mentor.
+            </p>
+          </div>
+          <div class="project">
+            <div class="project-thumbnail">
+              <a
+                href="https://frontend-mentor-noti-page.web.app/"
+                target="”_blank”"
+              >
+                <img
+                  src="./img/notifications-page.PNG"
+                  data-thumbnail="./img/notifications-page.PNG"
+                  data-gif="./img/notifications-page.PNG"
+                  class="thumbnail"
+                  alt="notifications page"
+                />
+              </a>
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <a
+                  href="https://frontend-mentor-noti-page.web.app/"
+                  class="project-name"
+                  target="”_blank”"
+                >
+                  Notifications Page
+                </a>
+                <h2 class="project-skills">React • TailwindCSS</h2>
+              </div>
+              <div class="project-card-col">
+                <a
+                  href="https://github.com/trandrew96/Notifications-page-for-Frontend-Mentor"
+                  class="project-card-github"
+                  target="”_blank”"
+                >
+                  <img src="./nav/github_icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <p>
+              An elegant notifications page built using React and TailwindCSS.
+              This was designed by frontend mentor.
+            </p>
+          </div>
+          <div class="project">
+            <div class="project-thumbnail">
+              <img
+                src="./img/weather-demo.PNG"
+                data-thumbnail="./img/weather-demo.PNG"
+                data-gif="./img/weather-demo.gif"
+                class="thumbnail"
+                alt="weather app thumbnail"
+              />
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <a class="project-name"> Weather App </a>
+                <h2 class="project-skills">React • CSS</h2>
+              </div>
+              <div class="project-card-col"></div>
+            </div>
+            <p>
+              A primitive weather app that gives the weekly forecast for a few
+              different cities. Built using React and the DarkSky API.
+              Disclaimer: the demo will stop working in early 2023 due to the
+              API shutting down.
+            </p>
+          </div>
+          <div class="project">
+            <div class="project-thumbnail">
+              <a
+                href="https://notflix-e0f18.firebaseapp.com/"
+                target="”_blank”"
+              >
+                <img
+                  src="./img/notflix.png"
+                  data-thumbnail="./img/notflix.png"
+                  data-gif="./img/notflix.gif"
+                  class="thumbnail"
+                  alt="netflix ui clone thumbnail"
+                />
+              </a>
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <a
+                  class="project-name"
+                  href="https://notflix-e0f18.firebaseapp.com/"
+                  target="”_blank”"
+                >
+                  Rough Netflix UI
+                </a>
+                <h2 class="project-skills">JavaScript • CSS</h2>
+              </div>
+              <div class="project-card-col">
+                <a
+                  href="https://github.com/trandrew96/netflix-slider"
+                  class="project-card-github"
+                  target="”_blank”"
+                  ><img src="./nav/github_icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+
+            <p>
+              A barebones re-creation of the iconic Netflix UI. Includes the
+              infinite scroll effect, and the transformation of the movie icons
+              when hovering over them.
+            </p>
+          </div>
+          <div class="project">
+            <div class="project-thumbnail">
+              <img
+                src="./img/project-tracker-demo.PNG"
+                data-thumbnail="./img/project-tracker-demo.PNG"
+                data-gif="./img/project-tracker-demo.gif"
+                class="thumbnail"
+                alt="project management app"
+              />
+            </div>
+            <div class="project-card-grid">
+              <div class="project-card-col">
+                <span class="project-name">Project Management App</span>
+                <h2 class="project-skills">Mongo • Express • React • Node</h2>
+              </div>
+              <div class="project-card-col">
+                <a
+                  href="https://github.com/trandrew96/project-tracker"
+                  class="project-card-github"
+                  target="”_blank”"
+                >
+                  <img src="./nav/github_icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <p>
+              Manage projects by creating tickets, assigning them to users,
+              tracking their status, and discussing tickets all within the app.
+              Inspired by the Bugzilla.
+              <a href="https://youtu.be/p2aux0CgdZg?t=65" target="”_blank”"
+                >View the demo on YouTube</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work">
+      <h1 class="text-center work-header" id="work">Work Experience</h1>
+      <section class="info-section">
+        <div class="">
+          <h3>Web Developer Contractor @ Ingram Pharmacy in 2024</h3>
+          <ul>
+            <li>
+              Design and develop static brochure website for this family owned
+              local business
+              <br />
+              <a href="https://ingrampharmacy.ca/" target="_blank"
+                >ingrampharmacy.ca</a
+              >
+            </li>
+            <li>
+              Consult client on required content and copywrite said content
+            </li>
+            <li>Manage deployment</li>
+            <li>Optimize SEO</li>
+            <li>
+              Make changes to site content whenever the client requests it in
+              the future
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <h3>Web Developer Consultant @ Lake Cowichan in 2023</h3>
+          <ul>
+            <li>Design and develop interactive UI with CSS/JS</li>
+            <ul>
+              <li>Search bar</li>
+              <li>Navbar</li>
+            </ul>
+            <li>Organize and create static web pages</li>
+            <li>Improve existing UI, bug fixes</li>
+            <li>Troubleshoot issues with WordPress site</li>
+          </ul>
+        </div>
+        <div class="">
+          <h3>Full Stack Developer @ Ergonomyx in 2021</h3>
+          <ul>
+            <li>Design and develop interactive UI with CSS/JS</li>
+            <ul>
+              <li>dashboards</li>
+              <li>shopping cart</li>
+              <li>currency switcher</li>
+            </ul>
+            <li>Wrote back-end logic in NodeJS, Flask, SQL</li>
+            <li>Improve responsiveness, esp mobile/tablet</li>
+            <li>Automate creation of invoice PDFs upon purchase</li>
+          </ul>
+          <div class="pt-5">
+            <b>Testimonial from Ergonomyx Supervisor:</b>
+            <p>
+              <i
+                >"He has been very successful in the responsibilities he has
+                been assigned to including, e-commerce front-end upgrade,
+                API/database restructure, cloud server management, and website
+                analytics. <br /><br />I highly recommend Andrew for employment
+                in the software development field in its entire range of
+                application, from front-end to back end development. As a
+                supervisor I have seen competencies that makes his projects
+                stand out from the rest. Such competencies include leadership
+                and initiative, software development, and communication"
+              </i>
+            </p>
+            <div class="text-right">
+              <b>- Sergio Perez</b>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h3>JUNIOR WEB DEVELOPER @ ACDSEE IN 2018</h3>
+          <ul>
+            <li>Develop static web pages</li>
+            <li>Implement misc features</li>
+            <li>CSS, Twig, Symfony</li>
+          </ul>
+        </div>
+      </section>
+      <div class="text-center pt-6">
+        <a
+          href="./Andrew Tran - Software Developer Resume.pdf"
+          target="”_blank”"
+        >
+          <button class="btn-resume">View my full resume</button>
+          <!-- <img src="./png-icon.png" class="pdf-icon" alt=""> -->
+        </a>
+      </div>
+    </section>
+
+    <!-- Script for changing thumbnails on project card hover -->
+    <script src="./scripts/portfolio-cards.js"></script>
+  </body>
 </html>
